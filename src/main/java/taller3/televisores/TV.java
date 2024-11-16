@@ -75,7 +75,11 @@ public class TV {
 		return control;
 	}
 	
-	//Método para acceder a numTV
+	//Métodos para acceder y configurar numTV
+	public static void setNumTV(int nuevoNumTV) {
+		numTV = nuevoNumTV;
+	}
+	
 	public static int getNumTV() {
 		return numTV;
 	}
