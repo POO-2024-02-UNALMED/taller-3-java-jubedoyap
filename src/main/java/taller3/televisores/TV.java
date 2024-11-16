@@ -79,7 +79,7 @@ public class TV {
 		numTV += nuevoNumTV;
 	}
 	
-	public int getNumTV() {
+	public static int getNumTV() {
 		return numTV;
 	}
 	
