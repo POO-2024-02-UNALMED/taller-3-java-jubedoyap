@@ -17,6 +17,7 @@ public class TV {
 	public TV(Marca marca, Boolean estado) {
 		this.estado = estado;
 		this.marca = marca;
+		numTV++;
 	}
 	
 	// Métodos get y set de marca
@@ -74,11 +75,7 @@ public class TV {
 		return control;
 	}
 	
-	//Métodos para acceder y configurar numTV
-	public static void setNumTV(int nuevoNumTV) {
-		numTV = nuevoNumTV;
-	}
-	
+	//Método para acceder a numTV
 	public static int getNumTV() {
 		return numTV;
 	}
