@@ -31,8 +31,13 @@ public class TV {
 	
 	// Métodos get y set de canal
 	public void setCanal(int nuevoCanal) {
-		if (nuevoCanal >= 1 && nuevoCanal <= 120) {
-			canal = nuevoCanal;
+		if(getEstado() == true){
+			if (nuevoCanal >= 1 && nuevoCanal <= 120) {
+				canal = nuevoCanal;
+			}
+			else {
+				return;
+			}
 		}
 		else {
 			return;
@@ -54,11 +59,16 @@ public class TV {
 	
 	// Métodos get y set de volumen
 	public void setVolumen(int nuevoVolumen) {
-		if (nuevoVolumen >= 0 && nuevoVolumen <= 7) {
-			volumen = nuevoVolumen;
+		if(getEstado() == true) {
+			if (nuevoVolumen >= 0 && nuevoVolumen <= 7) {
+				volumen = nuevoVolumen;
+			}
+			else {
+				return;
+			}
 		}
 		else {
-			return;
+			
 		}
 	}
 	
