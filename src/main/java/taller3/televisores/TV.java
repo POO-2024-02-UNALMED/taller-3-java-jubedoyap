@@ -76,7 +76,7 @@ public class TV {
 	
 	//Métodos para acceder y configurar numTV
 	public static void setNumTV(int nuevoNumTV) {
-		numTV += nuevoNumTV;
+		numTV = nuevoNumTV;
 	}
 	
 	public static int getNumTV() {
